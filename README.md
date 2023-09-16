@@ -1,6 +1,6 @@
 # git-commit-changer-batch
 
-Run the following command on your git/github repo and do 'git push -f' for remote repo.
+Run the following script on your git/github repo and do 'git push -f' for remote repo.
 
 ```
 git filter-branch --env-filter '
@@ -20,3 +20,5 @@ then
 fi
 ' --tag-name-filter cat -- --branches --tags
 ```
+
+Do note: You are going to rewrite your previous git commits. Use this in extreme cases and only when you know what you are doing and what could be it's side effects. This is just to educate you about the process.
